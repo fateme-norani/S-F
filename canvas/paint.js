@@ -17,7 +17,7 @@ ctx.lineWidth=3;
 var painting = false;
 
 mycanvas.onmousemove=function(evt){
-	var point = {x:evt.offsetX, y:evt.offsetY };
+	var point = {x:evt.clientX-mycanvas.offsetLeft, y:evt.clientY-mycanvas.offsetTop};
 	document.getElementById('pos').innerHTML="X: "+point.x+" Y: "+point.y;
 	if(!painting) return false;
 	ctx.lineTo(point.x,point.y);
