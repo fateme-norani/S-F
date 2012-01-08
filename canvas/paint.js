@@ -6,8 +6,9 @@ Object.prototype.Each=function(fn){
 }
 
 var mycanvas = document.getElementById('paint');
-var ctx = mycanvas.getContext('2d');
-if(!ctx) alert('Canvas not support, khak bar saret');
+
+var ctx = mycanvas.getContext?mycanvas.getContext('2d'):alert('Canvas not support, khak bar saret');
+
 
 ctx.beginPath();
 ctx.strokeStyle="#D11";
