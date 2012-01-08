@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<style type="text/css">
+*{
+	padding:0;
+	margin:0;
+}
+div.container {
+	width:990px;
+	margin:0 auto;
+}
+
+#paint {
+	border:1px solid gray;
+	cursor:crosshair;
+}
+
+div.container ul {
+	margin-left:10px;
+	margin-top:10px;
+	list-style:none;
+}
+div.container li {
+	float:left;
+	width:20px;
+	height:20px;
+	margin-left:5px;
+	
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<span id="pos">Move your ass ...</span>
+	<canvas id="paint" width="980" height="550" ></canvas>
+	<ul id="colors">
+		<li style="background-color:#D11"></li>
+		<li style="background-color:#1D1"></li>
+		<li style="background-color:#11D"></li>
+		<li style="background-color:#DD1"></li>
+		<li style="background-color:#1DD"></li>
+		<li style="background-color:#D1D"></li>
+		<li style="background-color:white">P</li>
+	</ul>
+</div>
+<script type="text/javascript" src="paint.js" ></script>
+</body>
+</html>
